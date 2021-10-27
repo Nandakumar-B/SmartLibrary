@@ -1,5 +1,5 @@
 # SmartLibrary
-* SmartLibrary is an Android app for managing libraries.
+* Finding and borrowing a book in a library can be time consuming and difficult. This app has been developed to solve these problems.
 * Users need sign-up/sign-in to use it.
 * All the books in the library can be seen in this app.
 * If the book is not reserved or borrowed by someone else , we can reserve the books or scan the barcode and borrow the book. Otherwise, we can see that the book was borrowed or reserved by someone else.
