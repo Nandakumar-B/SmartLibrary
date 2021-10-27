@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="right"
+	android:padding="10dp">
+
+	<LinearLayout
+		android:id="@+id/chat_LinearLayout"
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/shape_right">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:maxWidth="250dp"
+			android:padding="15dp"
+			android:lineSpacingExtra="5dp"
+			android:letterSpacing="0.04"
+			android:layout_height="wrap_content"
+			android:text="@string/your_message"
+			android:textColor="#ffffff"
+			android:id="@+id/txt_chat"
+			android:gravity="left"
+			android:textSize="12sp"
+			android:background="@drawable/shape_right"/>
+		<LinearLayout
+			android:visibility="gone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/chat_leftButton"
+				android:layout_width="80dp"
+				android:layout_height="30dp"
+				android:textColor="#ffffff"
+				android:text="@string/e_book"
+				android:background="@drawable/solid_button_background"
+				android:textSize="13sp"
+				android:layout_margin="5dp"
+				style="?android:attr/buttonBarButtonStyle" />
+
+			<Button
+				android:id="@+id/chat_rightButton"
+				android:layout_width="80dp"
+				android:layout_height="30dp"
+				android:text="@string/reserve"
+				android:background="@drawable/border_button_background"
+				android:textSize="13sp"
+				android:layout_margin="5dp"
+				style="?android:attr/buttonBarButtonStyle" />
+
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/square_background"
+	android:padding="10dp">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:background="@drawable/ic_alert"
+			android:contentDescription="@string/image_icon" />
+
+		<TextView
+			android:id="@+id/alert_head"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/alert"
+			android:layout_gravity="center_vertical"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/alert_info"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right">
+
+		<TextView
+			android:id="@+id/alert_neg"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:text="@string/cancel"
+			android:padding="10dp"
+			android:clickable="true"
+			android:background="?android:attr/selectableItemBackground"
+			android:focusable="true" />
+
+		<TextView
+			android:id="@+id/alert_pos"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:text="@string/done"
+			android:padding="10dp"
+			android:clickable="true"
+			android:background="?android:attr/selectableItemBackground"
+			android:focusable="true" />
+
+	</LinearLayout>
+
+</LinearLayout>
+

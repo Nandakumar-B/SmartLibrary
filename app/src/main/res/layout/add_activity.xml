@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:scrollbars="none"
+	android:fillViewport="true">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp">
+
+		<ImageView
+			android:id="@+id/add_preview"
+			android:elevation="8dp"
+			android:layout_width="100dp"
+			android:layout_height="150dp"
+			android:layout_margin="10dp"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/card_background"
+			android:contentDescription="@string/image_icon" />
+
+		<EditText
+			android:id="@+id/add_title"
+			android:layout_below="@+id/add_preview"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:drawableStart="@drawable/icon_title"
+			android:drawablePadding="5dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edit_text_background"
+			android:padding="10dp"
+			android:hint="@string/book_title"
+			android:textSize="14sp"
+			android:layout_margin="5dp"
+			android:inputType="textPersonName"
+			android:autofillHints="" />
+
+		<EditText
+			android:id="@+id/add_author"
+			android:layout_below="@+id/add_title"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:drawableStart="@drawable/icon_author"
+			android:drawablePadding="5dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edit_text_background"
+			android:padding="10dp"
+			android:hint="@string/book_author"
+			android:textSize="14sp"
+			android:layout_margin="5dp"
+			android:inputType="textPersonName"
+			android:autofillHints="" />
+
+		<EditText
+			android:id="@+id/add_type"
+			android:layout_below="@+id/add_author"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:drawableStart="@drawable/icon_type"
+			android:drawablePadding="5dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edit_text_background"
+			android:padding="10dp"
+			android:hint="@string/book_type"
+			android:textSize="14sp"
+			android:layout_margin="5dp"
+			android:inputType="text"
+			android:autofillHints="" />
+
+		<EditText
+			android:id="@+id/add_link"
+			android:layout_below="@+id/add_type"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:drawableStart="@drawable/icon_link"
+			android:drawablePadding="5dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edit_text_background"
+			android:padding="10dp"
+			android:hint="@string/e_book_link"
+			android:textSize="14sp"
+			android:layout_margin="5dp"
+			android:inputType="textWebEditText"
+			android:autofillHints="" />
+
+		<EditText
+			android:id="@+id/add_rfid"
+			android:layout_width="match_parent"
+			android:inputType="number"
+			android:padding="10dp"
+			android:textSize="14sp"
+			android:drawableStart="@drawable/icon_number"
+			android:drawablePadding="5dp"
+			android:layout_margin="5dp"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="@string/rfid_number"
+			android:layout_below="@id/add_link"
+			android:background="@drawable/edit_text_background"
+			android:autofillHints="" />
+
+		<EditText
+			android:id="@+id/add_about"
+			android:layout_below="@+id/add_rfid"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edit_text_background"
+			android:padding="15dp"
+			android:hint="@string/book_description"
+			android:textSize="14sp"
+			android:singleLine="false"
+			android:lineSpacingExtra="5dp"
+			android:layout_margin="5dp"
+			android:letterSpacing="0.06"
+			android:gravity="top"
+			android:minHeight="150dp"
+			android:inputType="textMultiLine"
+			android:autofillHints="" />
+
+		<Button
+			android:id="@+id/btn_upload"
+			android:layout_below="@+id/add_about"
+			android:layout_centerHorizontal="true"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/sign_button_background"
+			android:textAllCaps="false"
+			android:textColor="#ffffff"
+			android:text="@string/upload"
+			android:layout_margin="10dp"/>
+
+	</RelativeLayout>
+
+</ScrollView>
+
